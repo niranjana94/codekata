@@ -1,0 +1,21 @@
+//You are given a number A in Kilometers. Convert this into B: Meters and C: Centi-Metres.
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic 
+var a = parseInt(userInput[0]);
+var m=a*1000;
+var c= a*100000;
+  console.log(m);
+  console.log(c);
+//endhere
+});
